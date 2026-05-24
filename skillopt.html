@@ -461,9 +461,9 @@
     .comparison-frame {
       margin-top: 18px;
       padding: 18px;
-      color: #f8faf7;
-      background: #0b1018;
-      border: 1px solid var(--line-strong);
+      color: var(--ink);
+      background: var(--panel);
+      border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow);
     }
@@ -477,7 +477,7 @@
     }
 
     .comparison-heading span {
-      color: #f4c542;
+      color: var(--red);
       font-family: var(--mono);
       font-size: 0.72rem;
       font-weight: 700;
@@ -506,9 +506,9 @@
       gap: 7px;
       min-height: 26px;
       padding: 5px 8px;
-      color: rgba(248, 250, 247, 0.82);
-      background: rgba(248, 250, 247, 0.06);
-      border: 1px solid rgba(248, 250, 247, 0.14);
+      color: var(--muted);
+      background: rgba(235, 238, 240, 0.66);
+      border: 1px solid var(--line);
       border-radius: 6px;
       font-family: var(--mono);
       font-size: 0.67rem;
@@ -532,9 +532,9 @@
       min-width: 0;
       padding: 14px;
       background:
-        linear-gradient(180deg, rgba(248, 250, 247, 0.055), rgba(248, 250, 247, 0.02)),
-        rgba(13, 17, 23, 0.72);
-      border: 1px solid rgba(248, 250, 247, 0.13);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 250, 247, 0.64)),
+        var(--paper);
+      border: 1px solid var(--line);
       border-radius: 8px;
     }
 
@@ -557,9 +557,9 @@
     .delta-pill {
       flex: none;
       padding: 5px 8px;
-      color: #87d996;
-      background: rgba(46, 123, 63, 0.2);
-      border: 1px solid rgba(135, 217, 150, 0.5);
+      color: var(--green);
+      background: rgba(46, 123, 63, 0.12);
+      border: 1px solid rgba(46, 123, 63, 0.32);
       border-radius: 6px;
       font-family: var(--mono);
       font-size: 0.67rem;
@@ -575,10 +575,10 @@
       height: 170px;
       padding: 24px 8px 22px 34px;
       background:
-        linear-gradient(rgba(248, 250, 247, 0.08) 1px, transparent 1px) 0 24px / 100% 42px,
-        rgba(0, 0, 0, 0.16);
-      border-left: 1px solid rgba(248, 250, 247, 0.24);
-      border-bottom: 1px solid rgba(248, 250, 247, 0.24);
+        linear-gradient(rgba(21, 25, 31, 0.08) 1px, transparent 1px) 0 24px / 100% 42px,
+        rgba(235, 238, 240, 0.38);
+      border-left: 1px solid rgba(21, 25, 31, 0.25);
+      border-bottom: 1px solid rgba(21, 25, 31, 0.25);
       border-radius: 6px;
     }
 
@@ -586,7 +586,7 @@
       position: absolute;
       left: 7px;
       bottom: 6px;
-      color: rgba(248, 250, 247, 0.46);
+      color: var(--quiet);
       font-family: var(--mono);
       font-size: 0.58rem;
       writing-mode: vertical-rl;
@@ -605,8 +605,8 @@
     }
 
     .method-bar.skillopt {
-      border: 2px solid rgba(248, 250, 247, 0.82);
-      box-shadow: 0 0 16px rgba(135, 217, 150, 0.62);
+      border: 2px solid rgba(21, 25, 31, 0.62);
+      box-shadow: 0 0 0 3px rgba(46, 123, 63, 0.16), 0 10px 18px rgba(46, 123, 63, 0.22);
       opacity: 1;
     }
 
@@ -616,8 +616,8 @@
       bottom: calc(100% + 6px);
       transform: translateX(-50%);
       padding: 2px 5px;
-      color: #0b1018;
-      background: #87d996;
+      color: #f8faf7;
+      background: var(--green);
       border-radius: 5px;
       font-family: var(--mono);
       font-size: 0.62rem;
